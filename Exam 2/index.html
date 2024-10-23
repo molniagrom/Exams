@@ -1,0 +1,151 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exam_2</title>
+  </head>
+
+  <body>
+    <script>
+      let male = {
+        name: "John",
+        age: 35,
+        gender: "male",
+        address: {
+          street: "123 Main St",
+          city: "Cityville",
+          state: "State",
+          country: "Country",
+        },
+        passport: {
+          number: "ABC123XYZ",
+        },
+        marital_status: "married",
+        teenager: [
+          {
+            name: "Emily",
+            age: 8,
+          },
+        ],
+      };
+
+      let newPerson = {
+        name,
+        teenager: [
+          {
+            name: "Kate",
+            age: 11,
+          },
+        ],
+      };
+
+      console.log(male);
+      console.log(newPerson);
+    </script>
+  </body>
+</html>
+
+// ! ЧИТАЙ ВНИМАТЕЛЬНО, НЕ СПЕШИ: // Помоги допилить код. Предыдущий программист
+начал создавать объект newPerson. // В нем он хотел поменять имя и возраст
+ребенка, но запутался, как это // правильно сделать, поэтому поставил заглушки
+XXX и YYY. // Необходимо через пробел написать два ключа. // Пример: ,,,,name
+age -->
+
+<!-- <script>
+
+const person = {
+  name: Andrey,
+  age: 25
+};
+
+console.log(person.name); 
+
+
+</script> -->
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Exam_2</title>
+</head>
+<body>
+<script>
+const checkAccess = (prof, level, age) => {
+if ((prof === 'proger' && level === 'june' && age > 21) || (prof === 'proger' && level === 'middle' && age >= 18)) {
+console.log('Оффер!');
+} else {
+console.log('Прокачивайся дальше, салага!');
+}
+};
+checkAccess('proger', 'june', 25);
+checkAccess('proger', 'middle', 18);
+</script>
+</body>
+</html> -->
+
+<!-- // ! ЧИТАЙ ВНИМАТЕЛЬНО, НЕ СПЕШИ:
+// Помоги допиcать условие:
+// Если prof ==="proger " и ты мидл, то берем с 18 лет,
+// или если prof ==="proger " и ты джун, то берем с 21 года
+// Необходимо заменить ???  и написать через пробел ТРИ правильных значения:
+// Пример: *** ++ $$ -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exam_2</title>
+  </head>
+
+  <body>
+    <script>
+              let mister= {
+                  name: "Alex",
+                  age: 22,
+                  gender: "male",
+                  address: {
+                      country: "Country"
+                  },
+                  marital_status: "married",
+                  children: [
+                      {
+                          name: "Emily",
+                          age: 8,
+                          grandchildren: [
+                              {
+                                  name: "Alice",
+                                  age: 13
+                              },
+                          ]
+                      }
+                  ]
+              };
+
+      let newPerson = {
+          ...mister,
+          children: [
+              {
+                ...mister.children[0],
+                  grandchildren: [
+                  ...mister.children[0].grandchildren,
+                      {
+                          name: "Bob",
+                          age: 15
+                      }
+                  ]
+              }
+          ]
+      };
+      console.log(mister);
+      console.log(newPerson);
+    </script>
+  </body>
+</html> -->
+
+<!-- // ! ЧИТАЙ ВНИМАТЕЛЬНО, НЕ СПЕШИ: // Опять наш джун не доделал работу! // Ему
+необходимо было добавить еще одного внука: {name: "Bob",age: 15}. // А он вместо
+кода поставил заглушки-необходимо написать корректный код. // ОБРАТИ ВНИМАНИЕ:
+ЗАГЛУШКИ СТОЯТ В ДВУХ СТРОЧКАХ, НО В ОБОИХ ОДИНАКОВЫЙ ОТВЕТ //ПРИМЕР:
+,,,big.medium (через точку) -->
